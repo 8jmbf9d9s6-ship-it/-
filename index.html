@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no" />
+  <meta name="theme-color" content="#ffd9e5" />
+  <title>체리키우기</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main id="game">
+    <button id="skipBtn" class="skip-btn" type="button">건너뛰기</button>
+
+    <section id="darkScene" class="scene scene--dark is-active">
+      <div class="paw paw--1">🐾</div>
+      <div class="paw paw--2">🐾</div>
+      <div class="paw paw--3">🐾</div>
+      <div class="paw paw--4">🐾</div>
+      <p id="stepText" class="step-text">톡... 톡... 톡...</p>
+    </section>
+
+    <section id="gardenScene" class="scene scene--garden">
+      <div class="sun"></div>
+
+      <div class="tree tree--left">
+        <div class="tree__trunk"></div>
+        <div class="tree__crown"></div>
+      </div>
+      <div class="tree tree--right">
+        <div class="tree__trunk"></div>
+        <div class="tree__crown"></div>
+      </div>
+
+      <div class="house"></div>
+      <div class="grass grass--left"></div>
+      <div class="grass grass--right"></div>
+      <div class="path"></div>
+      <div id="petalLayer"></div>
+
+      <div id="cherry" class="dog" aria-label="체리">
+        <div class="dog__tail"></div>
+        <div class="dog__body"></div>
+        <div class="dog__chest"></div>
+        <div class="dog__head">
+          <div class="dog__ear dog__ear--left"></div>
+          <div class="dog__ear dog__ear--right"></div>
+          <div class="dog__eye dog__eye--left"></div>
+          <div class="dog__eye dog__eye--right"></div>
+          <div class="dog__muzzle"></div>
+          <div class="dog__nose"></div>
+          <div class="dog__mouth"></div>
+        </div>
+        <div class="dog__leg dog__leg--left"><div class="dog__paw"></div></div>
+        <div class="dog__leg dog__leg--right"><div class="dog__paw"></div></div>
+      </div>
+
+      <div id="barkBubble" class="bubble">멍! 🐾</div>
+      <button id="touchHint" class="touch-hint" type="button">화면을 터치해 주세요 ❤️</button>
+
+      <section id="titleScreen" class="title-screen">
+        <div class="title-screen__cherries">🍒</div>
+        <h1>체리키우기</h1>
+        <p>체리와 함께하는 특별한 하루</p>
+        <button id="startBtn" class="start-btn" type="button">▶ 게임 시작</button>
+      </section>
+    </section>
+
+    <div id="toast" class="toast">V0.1 인트로 테스트 완료! 🐶</div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
